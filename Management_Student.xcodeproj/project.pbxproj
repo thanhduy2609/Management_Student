@@ -14,6 +14,9 @@
 		300515E51EBDE0F800360BEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 300515E31EBDE0F800360BEC /* LaunchScreen.storyboard */; };
 		300515F01EBDE0F800360BEC /* Management_StudentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300515EF1EBDE0F800360BEC /* Management_StudentTests.swift */; };
 		300515FB1EBDE0F800360BEC /* Management_StudentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300515FA1EBDE0F800360BEC /* Management_StudentUITests.swift */; };
+		3005160A1EBDE37100360BEC /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300516091EBDE37100360BEC /* Student.swift */; };
+		3005160E1EBDE41300360BEC /* StudentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3005160D1EBDE41300360BEC /* StudentCell.swift */; };
+		300516101EBDE70A00360BEC /* StudentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3005160F1EBDE70A00360BEC /* StudentTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		300515F61EBDE0F800360BEC /* Management_StudentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Management_StudentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		300515FA1EBDE0F800360BEC /* Management_StudentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Management_StudentUITests.swift; sourceTree = "<group>"; };
 		300515FC1EBDE0F800360BEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		300516091EBDE37100360BEC /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		3005160D1EBDE41300360BEC /* StudentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentCell.swift; sourceTree = "<group>"; };
+		3005160F1EBDE70A00360BEC /* StudentTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +103,11 @@
 		300515D91EBDE0F800360BEC /* Management_Student */ = {
 			isa = PBXGroup;
 			children = (
+				3005160C1EBDE3D000360BEC /* Cotrollers */,
+				3005160B1EBDE3C700360BEC /* View */,
+				300516081EBDE36200360BEC /* Model */,
 				300515DA1EBDE0F800360BEC /* AppDelegate.swift */,
 				300515DC1EBDE0F800360BEC /* ViewController.swift */,
-				300515DE1EBDE0F800360BEC /* Main.storyboard */,
 				300515E11EBDE0F800360BEC /* Assets.xcassets */,
 				300515E31EBDE0F800360BEC /* LaunchScreen.storyboard */,
 				300515E61EBDE0F800360BEC /* Info.plist */,
@@ -123,6 +131,31 @@
 				300515FC1EBDE0F800360BEC /* Info.plist */,
 			);
 			path = Management_StudentUITests;
+			sourceTree = "<group>";
+		};
+		300516081EBDE36200360BEC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				300516091EBDE37100360BEC /* Student.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		3005160B1EBDE3C700360BEC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				300515DE1EBDE0F800360BEC /* Main.storyboard */,
+				3005160D1EBDE41300360BEC /* StudentCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		3005160C1EBDE3D000360BEC /* Cotrollers */ = {
+			isa = PBXGroup;
+			children = (
+				3005160F1EBDE70A00360BEC /* StudentTableViewController.swift */,
+			);
+			name = Cotrollers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +293,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				300515DD1EBDE0F800360BEC /* ViewController.swift in Sources */,
+				3005160A1EBDE37100360BEC /* Student.swift in Sources */,
 				300515DB1EBDE0F800360BEC /* AppDelegate.swift in Sources */,
+				300516101EBDE70A00360BEC /* StudentTableViewController.swift in Sources */,
+				3005160E1EBDE41300360BEC /* StudentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
