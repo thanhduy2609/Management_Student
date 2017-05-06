@@ -17,6 +17,9 @@
 		3005160A1EBDE37100360BEC /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300516091EBDE37100360BEC /* Student.swift */; };
 		3005160E1EBDE41300360BEC /* StudentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3005160D1EBDE41300360BEC /* StudentCell.swift */; };
 		300516101EBDE70A00360BEC /* StudentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3005160F1EBDE70A00360BEC /* StudentTableViewController.swift */; };
+		300664611EBE0F2A00AD78D4 /* StudentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300664601EBE0F2A00AD78D4 /* StudentDetailViewController.swift */; };
+		300664631EBE13CD00AD78D4 /* AddStudentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300664621EBE13CD00AD78D4 /* AddStudentViewController.swift */; };
+		300664661EBE14C600AD78D4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300664651EBE14C600AD78D4 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		300516091EBDE37100360BEC /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		3005160D1EBDE41300360BEC /* StudentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentCell.swift; sourceTree = "<group>"; };
 		3005160F1EBDE70A00360BEC /* StudentTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentTableViewController.swift; sourceTree = "<group>"; };
+		300664601EBE0F2A00AD78D4 /* StudentDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentDetailViewController.swift; sourceTree = "<group>"; };
+		300664621EBE13CD00AD78D4 /* AddStudentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddStudentViewController.swift; sourceTree = "<group>"; };
+		300664651EBE14C600AD78D4 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,7 @@
 		300515D91EBDE0F800360BEC /* Management_Student */ = {
 			isa = PBXGroup;
 			children = (
+				300664641EBE14B900AD78D4 /* Utils */,
 				3005160C1EBDE3D000360BEC /* Cotrollers */,
 				3005160B1EBDE3C700360BEC /* View */,
 				300516081EBDE36200360BEC /* Model */,
@@ -154,8 +161,18 @@
 			isa = PBXGroup;
 			children = (
 				3005160F1EBDE70A00360BEC /* StudentTableViewController.swift */,
+				300664601EBE0F2A00AD78D4 /* StudentDetailViewController.swift */,
+				300664621EBE13CD00AD78D4 /* AddStudentViewController.swift */,
 			);
 			name = Cotrollers;
+			sourceTree = "<group>";
+		};
+		300664641EBE14B900AD78D4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				300664651EBE14C600AD78D4 /* Constants.swift */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,10 +310,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				300515DD1EBDE0F800360BEC /* ViewController.swift in Sources */,
+				300664631EBE13CD00AD78D4 /* AddStudentViewController.swift in Sources */,
 				3005160A1EBDE37100360BEC /* Student.swift in Sources */,
 				300515DB1EBDE0F800360BEC /* AppDelegate.swift in Sources */,
 				300516101EBDE70A00360BEC /* StudentTableViewController.swift in Sources */,
 				3005160E1EBDE41300360BEC /* StudentCell.swift in Sources */,
+				300664611EBE0F2A00AD78D4 /* StudentDetailViewController.swift in Sources */,
+				300664661EBE14C600AD78D4 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,6 +563,7 @@
 				300516011EBDE0F800360BEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		300516021EBDE0F800360BEC /* Build configuration list for PBXNativeTarget "Management_StudentTests" */ = {
 			isa = XCConfigurationList;
@@ -551,6 +572,7 @@
 				300516041EBDE0F800360BEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		300516051EBDE0F800360BEC /* Build configuration list for PBXNativeTarget "Management_StudentUITests" */ = {
 			isa = XCConfigurationList;
@@ -559,6 +581,7 @@
 				300516071EBDE0F800360BEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
