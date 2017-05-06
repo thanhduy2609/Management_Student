@@ -101,7 +101,14 @@ class StudentTableViewController: UITableViewController {
             // initialize new view controller and cast it as your view controller
             let viewController = segue.destination as! StudentDetailViewController
             if let indexPath = self.tableView.indexPathForSelectedRow{
-                viewController.student = students[indexPath.row]
+                let student: Student
+                if searchController.isActive && searchController.searchBar.text != "" {
+                    student = filteredStudent[indexPath.row]
+                } else {
+                    student = students[indexPath.row]
+                }
+
+                viewController.student = student
             }
             
         }
